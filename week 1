@@ -35,9 +35,9 @@ void loop() {
     int blinkCount = Serial.parseInt();  
     for (int i = 0; i < blinkCount; i++) {
       digitalWrite(LED_BUILTIN, HIGH); 
-      delay(500);  // Wait for 1 second
+      delay(500);  
       digitalWrite(LED_BUILTIN, LOW);  
-      delay(500);  // Wait for 1 second
+      delay(500);  
     }
     int randomResponse = random(1, 10);  
     Serial.println(randomResponse);  
